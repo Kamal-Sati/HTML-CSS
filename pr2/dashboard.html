@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <aside class="main-Sidebar">
+            <a class="logo-div" href="dashboard.html">
+                <img id="brand-logo" src="images/satellite.png" alt="Logo">
+                <span id="brand-name">Lib Mng</span>
+            </a>
+            <div class="sidebar-Profile">
+                <div class="user-panel flex">
+                    <div class="user-image">
+                        <img src="images/default.png" alt="profile">
+                    </div>
+                    <div class="user-info">
+                        <a href="#">Ben</a>
+                        <span>Librarian</span>
+                    </div>
+
+                </div>
+
+                <nav>
+                    <ul>
+                        <li id="dashboardli"><a href="dashboard.html"> <i id="dashboardicon"
+                                    class="nav-icon fas fa-tachometer-alt "></i> <span
+                                    class="dashboardfont">dashboard</span></a></li>
+                        <li id="mngli"><a id="mnglia" href="#"> <i id="mngliicon"
+                                    class="fas fa-book insideIcon nav-icon"></i><span class="mngfont">Mng Library</span>
+                                <i class="fa-solid fa-arrow-right Arrow-right"></i>
+                            </a>
+                        </li>
+
+                        <div class="Aside-dropdown">
+                            <ul id="content">
+                                <li><a href="#"></a>
+                                    <i class="fab fa-gg-circle nav-icon"></i>
+                                    <span> Add Book</span>
+
+                                </li>
+                                <li><a href="#"></a>
+                                    <i class="fab fa-gg-circle nav-icon"></i>
+                                    <span> Mng Book</span>
+
+                                </li>
+                                <li><a href="#"></a>
+                                    <i class="fab fa-gg-circle nav-icon"></i>
+                                    <span> Issue Book</span>
+                                </li>
+                                <li><a href="#"></a>
+                                    <i class="fab fa-gg-circle nav-icon"></i>
+                                    <span> Issued Book</span>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </ul>
+                </nav>
+            </div>
+
+
+        </aside>
+
+        <nav class="main-Header">
+            <ul class="navicons1">
+                <li><a href="#"><i class="fa fa-bars" id="menubar-Icon"></i></a></li>
+                
+                <li><a href="dashboard.html" class="Dashboard-Home">Home</a></li>
+                <li><a id="homeYear" href="dashboard.html">WY:2024-2025</a></li>
+
+            </ul>
+            <ul class="navicons2">
+                <li>
+                    <a href="#"><i id="dropdown-icon" class="fa fa-caret-down arrow-Icon"></i></a>
+
+                    <div class="dropdown">
+                        <ul>
+                            <li> <a href="#"> <i class="fa-solid fa-truck-fast caricons "></i> Visit FrontPage</a></li>
+                            <li><a href="#"> <i class="fa-solid fa-truck-fast caricons"></i> profile</a></li>
+                            <li><a href="#"> <i class="fa-solid fa-truck-fast caricons"></i> logout</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+            </ul>
+        </nav>
+        <div class="content-Wrapper">
+            <div class="dashboard flex">
+                <div class="Dashboardinnerdiv1">Dashboard</div>
+                <div class="Dashboardinnerdiv2">
+                    <li><a id="homebtn" href="dashboard.html">Home </a> <span>/ Dashboard</span></li>
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="innerContent-Wrapper">
+                <div class="featuresBox">
+                    <div id="featurebox1" class="bookbox flex">
+                        <div class="featureboxinner1 flex">
+                            <span class="featurebox1Icon flex ">
+                                <i class="fas fa-book insideIcon"></i>
+                            </span>
+                            <div class="bookinforBox flex">
+                                <span class="spc-No-book" id="info-NO-ofbook">T.Books</span>
+                                <span id="info-book-number">6</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div id="featurebox1" class="bookbox flex">
+                        <div class="featureboxinner1 flex">
+                            <span style="background-color: #dc3545" class="featurebox1Icon flex ">
+                                <!-- <i class="fas fa-book "></i> -->
+                                <i class="far fa-money-bill-alt insideIcon"></i>
+                            </span>
+                            <div class="bookinforBox flex">
+                                <span id="info-NO-ofbook">C.Fine</span>
+                                <span id="info-book-number">$88</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div id="featurebox1" class="bookbox flex">
+                        <div class="featureboxinner1 flex">
+                            <span style="background-color: #28a745" class="featurebox1Icon flex ">
+                                <i class="fas fa-shopping-cart insideIcon"></i>
+                            </span>
+                            <div class="bookinforBox flex">
+                                <span class="spc-No-book" id="info-NO-ofbook"><a style="color: #007bff;"
+                                        href="#">C.Borrowed</a></span>
+                                <span id="info-book-number">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div id="featurebox1" class="bookbox flex">
+                        <div class="featureboxinner1 flex">
+                            <span style="background-color:#ffc107" class="featurebox1Icon flex ">
+                                <i style="color: #000;" class="fas fa-users insideIcon"></i>
+                            </span>
+                            <div class="bookinforBox flex">
+                                <span id="info-NO-ofbook"><a style="color: #007bff;" href="#">User</a></span>
+                                <span id="info-book-number">4</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+                <div class="book-container">
+
+                    <div class="book-card">
+                        <img src="images/book_image1.webp" alt="Book Cover 1" class="book-image">
+                        <h3 class="book-title">The Vintage</h3>
+                        <p class="book-author">Jonathan Lethem</p>
+                        <div class="book-rating">⭐⭐⭐⭐⭐ (07 Reviews)</div>
+                        <div class="book-price">
+                            ₹119 <del>₹222</del>
+                        </div>
+                        <div class="btnbox flex">
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <div id="eyesicon">
+                                <i class="fa-solid fa-eye eyes "></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="book-card">
+                        <img src="images/book_image2 (2).webp" alt="Book Cover 1" class="book-image">
+                        <h3 class="book-title">Dark Night</h3>
+                        <p class="book-author">Ramesh Kumar</p>
+                        <div class="book-rating">⭐⭐⭐⭐ (23   Reviews)</div>
+                        <div class="book-price">
+                            ₹300 <del>₹345</del>
+                        </div>
+                        <div class="btnbox flex">
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <div id="eyesicon">
+                                <i class="fa-solid fa-eye eyes "></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="book-card">
+                        <img src="images/book_image3.webp" alt="Book Cover 1" class="book-image">
+                        <h3 class="book-title">julia Story</h3>
+                        <p class="book-author">Jully Jully</p>
+                        <div class="book-rating">⭐⭐⭐ (12 Reviews)</div>
+                        <div class="book-price">
+                            ₹399 <del>₹500</del>
+                        </div>
+                        <div class="btnbox flex">
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <div id="eyesicon">
+                                <i class="fa-solid fa-eye eyes "></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="book-card">
+                        <img src="images/book_image4.webp" alt="Book Cover 1" class="book-image">
+                        <h3 class="book-title">The Spiritual</h3>
+                        <p class="book-author">Ranveer Allahbadia
+                        </p>
+                        <div class="book-rating">⭐ (98 Reviews)</div>
+                        <div class="book-price">
+                            ₹498<del>₹499</del>
+                        </div>
+                        <div class="btnbox flex">
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <div id="eyesicon">
+                                <i class="fa-solid fa-eye eyes "></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Repeat .book-card for more books -->
+                </div>
+
+
+
+
+
+
+
+                <div class="book-container">
+                    <div class="book-card">
+                        <img src="images/book_image5.webp" alt="Book Cover 1" class="book-image">
+                        <h3 class="book-title">Cover Design</h3>
+                        <p class="book-author">Deepak Bisht</p>
+                        <div class="book-rating">⭐⭐⭐⭐ (17 Reviews)</div>
+                        <div class="book-price">
+                            ₹99<del>₹999</del>
+                        </div>
+                        <div class="btnbox flex">
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <div id="eyesicon">
+                                <i class="fa-solid fa-eye eyes "></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="book-card">
+                        <img src="images/book_image6.webp" alt="Book Cover 1" class="book-image">
+                        <h3 class="book-title">The Butterfly
+                        </h3>
+                        <p class="book-author">Butterfly Butterfly</p>
+                        <div class="book-rating">⭐⭐⭐⭐⭐ (65 Reviews)</div>
+                        <div class="book-price">
+                            ₹400 <del>₹599</del>
+                        </div>
+                        <div class="btnbox flex">
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <div id="eyesicon">
+                                <i class="fa-solid fa-eye eyes "></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-card">
+                        <img src="images/book_image1.webp" alt="Book Cover 1" class="book-image">
+                        <h3 class="book-title">The Vintage</h3>
+                        <p class="book-author">Jonathan Lethem</p>
+                        <div class="book-rating">⭐⭐⭐⭐⭐ (07 Reviews)</div>
+                        <div class="book-price">
+                            ₹119 <del>₹222</del>
+                        </div>
+                        <div class="btnbox flex">
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <div id="eyesicon">
+                                <i class="fa-solid fa-eye eyes "></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="book-card">
+                        <img src="images/book_image2 (2).webp" alt="Book Cover 1" class="book-image">
+                        <h3 class="book-title">Dark Night</h3>
+                        <p class="book-author">Ramesh Kumar</p>
+                        <div class="book-rating">⭐⭐⭐⭐ (23  Reviews)</div>
+                        <div class="book-price">
+                            ₹300 <del>₹345</del>
+                            <div class="btnbox flex">
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <div id="eyesicon">
+                                    <i class="fa-solid fa-eye eyes "></i>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Repeat .book-card for more books -->
+                    </div>
+
+
+                    <!-- </div> -->
+
+
+                    <footer>
+                        <span id="span1">Copyright © 2019-2024 </span>
+                        <span id="span2">All rights reserved</span>
+                    </footer>
+
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="showcontainer ">
+            <div class="showcontainerinnerdiv1" id="innerdiv">
+                <img src="images/book_image3.webp" alt="">
+            </div>
+            <div class="showcontainerinnerdiv2" id="innerdiv">
+                <h3 class="book-title">The Vintage</h3>
+                <p class="book-author">Jonathan Lethem</p>
+                <div class="book-price">
+                    ₹119 <del>₹222</del>
+
+                </div>
+                <p>Santiago travels from his homeland in Spain to the Egyptian desert in search of a treasure buried
+                    near the Pyramids. Lorem ipsum dolor sit amet, conse....</p>
+                <div class="btnbox flex">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="closebtn">
+                    <i class="fa-solid fa-x xicon"></i>
+                </div>
+            </div>
+
+
+
+        </div>
+        <script src="dashboard.js"></script>
+</body>
+
+</html>
+
+<!-- <aside class="main-sidebar"></aside>
+        <div class="content-wrapper"> </div> -->
